@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.android.navigation.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_loveFragment"
+            app:destination="@id/loveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.android.navigation.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.android.navigation.User.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_singleUserFragment"
+            app:destination="@id/singleUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleUserFragment"
+        android:name="com.example.android.navigation.SingleUser.SingleUserFragment"
+        android:label="fragment_single_user"
+        tools:layout="@layout/fragment_single_user" >
+        <argument
+            android:name="user"
+            app:argType="com.example.android.navigation.data.RandomUsers.models.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.android.navigation.Add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.example.android.navigation.Calculator.CalculatorFragment"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator" />
+    <fragment
+        android:id="@+id/loveFragment"
+        android:name="com.example.android.navigation.Love.LoveFragment"
+        android:label="fragment_love"
+        tools:layout="@layout/fragment_love" >
+        <action
+            android:id="@+id/action_loveFragment_to_singleLoveFragment"
+            app:destination="@id/singleLoveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleLoveFragment"
+        android:name="com.example.android.navigation.SingleLove.SingleLoveFragment"
+        android:label="fragment_single_love"
+        tools:layout="@layout/fragment_single_love" >
+        <argument
+            android:name="love"
+            app:argType="com.example.android.navigation.data.LoveCalculator.Love" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectFragment"
+        android:name="com.example.android.navigation.ProjectFragment"
+        android:label="fragment_project"
+        tools:layout="@layout/fragment_project" />
+</navigation>

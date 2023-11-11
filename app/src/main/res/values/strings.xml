@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Love Calculator</string>
+    <string name="about_text">App was developed by: \n\nRijad Mutapčić and Omar Omerhodžić. \n\nSponsor: Discord</string>
+    <string name="project_text">App that uses Random User API and Love Calculator API from RapidAPI.</string>
+    <string name="project">Project</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="plus">Plus</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="calculate">Calculate</string>
+    <string name="user_details_first">First name: %1$s</string>
+    <string name="user_details_last">Last name: %1$s</string>
+    <string name="user_details_age">Age: %1$s</string>
+    <string name="user_details_country">Country: %1$s</string>
+    <string name="user_details_email">Email: %1$s</string>
+    <string name="user">User</string>
+    <string name="love">Love</string>
+    <string name="calculator">Calculator</string>
+    <string name="calculated">Percentage: %1$s \n%2$s</string>
+    <string name="gender">Gender</string>
+    <string name="all">All</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="name_first_last">%1$s</string>
+    <string name="share_message">%1$s and %2$s are in love %3$s </string>
+</resources>
